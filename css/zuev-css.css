@@ -233,7 +233,6 @@
         border: 1.5px solid rgb(10, 165, 240);
         border-radius: 10px;
         /*overflow: hidden;*/
-
     }
 
     .main-sell-cart {
@@ -259,13 +258,15 @@
     }
 
     .main-sell-cart:hover::before {
-        content: '';
         display: block;
+        content: '';
         position: absolute;
         pointer-events: none;
         top: 0;
         left: 0;
-        right: 0;
+        width: 256px;
+        min-height: 1250px;
+        /*bottom: -250px;*/
         background-color: rgba(10, 165, 240, 0.1);
         border-radius: 10px;
         z-index: 50;
@@ -275,9 +276,9 @@
         display: block;
         position: absolute;
         pointer-events: none;
-        left: 5px;
-        width: 361px;
-        min-height: 1350px;
+        left: 0;
+        width: 256px;
+        min-height: 1250px;
         background-color: rgba(10, 165, 240, 0.1);
         border-radius: 10px;
         z-index: 50;
