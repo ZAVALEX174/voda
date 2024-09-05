@@ -206,13 +206,29 @@
 
     .body-row-tablet-yacheika {
         /*width: 100%;*/
-        width: 361px;
+        width: 256px;
         text-align: left;
         margin-right: 25px;
         padding-left: 28px;
     }
 
-    .main-sell-cart.main-sell-cart-celected{
+
+    .main-like-section-category-cart-box {
+        width: 100%;
+        display: flex;
+    }
+
+    .main-sell-slide-list {
+        display: flex;
+        column-gap: 23px;
+    }
+
+    .main-sell-slide-list .main-sell-slide {
+        width: 256px;
+        padding: 12px 10px 12px 14px;
+    }
+
+    .main-sell-cart.main-sell-cart-celected {
         position: relative;
         border: 1.5px solid rgb(10, 165, 240);
         border-radius: 10px;
@@ -221,6 +237,9 @@
     }
 
     .main-sell-cart {
+        width: 100%;
+        max-width: 256px;
+        padding: 12px 10px 12px 14px;
         border: 1.5px solid transparent;
         margin-bottom: 75px;
         position: relative;
@@ -229,7 +248,7 @@
         transition: border 0.3s ease-out;
     }
 
-    .main-sell-cart:hover{
+    .main-sell-cart:hover {
         border: 1.5px solid rgb(10, 165, 240);
         border-radius: 10px;
         /*overflow: hidden;*/
@@ -238,7 +257,7 @@
         transition: border 0.3s ease-out;
     }
 
-    .main-sell-cart:hover::before{
+    .main-sell-cart:hover::before {
         content: '';
         display: block;
         position: absolute;
@@ -246,9 +265,6 @@
         top: 0;
         left: 0;
         right: 0;
-
-        /*width: 361px;*/
-        /*min-height: 1350px;*/
         background-color: rgba(10, 165, 240, 0.1);
         border-radius: 10px;
         z-index: 50;
@@ -331,4 +347,29 @@
     -webkit-transition: 0.3s ease-out;
     -o-transition: 0.3s ease-out;
     transition: 0.3s ease-out;
+}
+
+.main-sell-plus {
+    margin-left: 0;
+}
+
+.main-sell-info {
+    padding: 0;
+}
+
+.main-sell-volume {
+    padding-left: 0;
+}
+
+.main-sell-volume span {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.main-sell-slide-list .volume-list {
+    gap: 5px;
+}
+
+.main-sell-slide-list .volume-item {
+
 }
