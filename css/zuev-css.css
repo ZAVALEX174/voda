@@ -1,11 +1,20 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .main-like-section-category {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 
     .main-like-category {
         width: 100%;
     }
 
     .category--list {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
@@ -25,6 +34,8 @@
         bottom: 0;
         left: 0;
         background-color: rgb(10, 165, 240);
+        -webkit-transition: width 0.3s ease-out;
+        -o-transition: width 0.3s ease-out;
         transition: width 0.3s ease-out;
     }
 
@@ -47,6 +58,8 @@
 
     .category-item:hover .category-link {
         color: rgb(10, 165, 240);
+        -webkit-transition: color 0.3s ease-out;
+        -o-transition: color 0.3s ease-out;
         transition: color 0.3s ease-out;
     }
 
@@ -67,7 +80,11 @@
 
     .main-like-category-show-selection {
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         margin-bottom: 59px;
     }
@@ -83,6 +100,8 @@
     }
 
     .show-selection-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         gap: 4px;
     }
@@ -93,6 +112,8 @@
 
     .show-selection-item:hover .show-selection-link {
         color: rgb(10, 165, 240);
+        -webkit-transition: color 0.3s ease-out;
+        -o-transition: color 0.3s ease-out;
         transition: color 0.3s ease-out;
     }
 
@@ -131,7 +152,12 @@
 
     .tables-box-row {
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -166,6 +192,8 @@
 
     .body-row-tablet {
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
@@ -177,17 +205,46 @@
         padding-left: 28px;
     }
 
-    .main-sell-cart.main-sell-cart-celected {
+    .main-sell-cart.main-sell-cart-celected{
         position: relative;
         border: 1.5px solid rgb(10, 165, 240);
         border-radius: 10px;
-        overflow: hidden;
+        /*overflow: hidden;*/
+
+    }
+
+    .main-sell-cart {
+        margin-bottom: 75px;
+    }
+
+    .main-sell-cart:hover{
+        position: relative;
+        border: 1.5px solid rgb(10, 165, 240);
+        border-radius: 10px;
+        /*overflow: hidden;*/
+    }
+
+    .main-sell-cart:hover::before{
+        content: '';
+        display: block;
+        position: absolute;
+        pointer-events: none;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        /*width: 361px;*/
+        /*min-height: 1350px;*/
+        background-color: rgba(10, 165, 240, 0.1);
+        border-radius: 10px;
+        z-index: 50;
     }
 
     .main-sell-cart-celected-line {
         display: block;
         position: absolute;
         pointer-events: none;
+        left: 5px;
         width: 361px;
         min-height: 1350px;
         background-color: rgba(10, 165, 240, 0.1);
@@ -198,6 +255,19 @@
     .main-like-image img {
         width: 100%;
         height: 100%;
+        border-radius: 10px;
+        -o-object-fit: cover;
         object-fit: cover;
+        overflow: hidden;
+    }
+
+    .slick-list.draggable {
+        padding-left: 2px;
+    }
+
+    .main-like-slider {
+        border-radius: 0 0 15px 15px;
+        -webkit-box-shadow: 0 0 26px 0 rgba(9, 164, 237, 0.8);
+        box-shadow: 0 0 26px 0 rgba(9, 164, 237, 0.8);
     }
 }
