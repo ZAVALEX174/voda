@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Muller';
+  src: local('Muller'), url('../fonts/MullerBold.eot') format('eot'),
+    url('../fonts/MullerBold.woff') format('woff'),
+    url('../fonts/MullerBold.woff2') format('woff2'),
+    url('../fonts/muller-bold.svg#mullerbold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Muller';
+  src: local('Muller'), url('../fonts/MullerRegular.eot') format('eot'),
+    url('../fonts/MullerRegular.woff') format('woff'),
+    url('../fonts/MullerRegular.woff2') format('woff2'),
+    url('../fonts/muller-regular.svg#muller_regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Radiotechnika';
+  src: local('Radiotechnika'), url('../fonts/Radiotechnika.otf') format('otf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Radiotechnika';
+  src: url('../fonts/radiotechnika.eot');
+  src: url('../fonts/radiotechnika.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/radiotechnika.woff') format('woff'),
+    url('../fonts/radiotechnika.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}

@@ -1,0 +1,192 @@
+.main-like-section-category {
+
+    .main-like-category {
+        width: 100%;
+    }
+
+    .category--list {
+        display: flex;
+    }
+
+    .category-item {
+        position: relative;
+        max-width: 230px;
+        width: 100%;
+        padding: 23px 5px;
+        text-align: center;
+    }
+
+    .category-item::after {
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 1.5px;
+        bottom: 0;
+        left: 0;
+        background-color: rgb(10, 165, 240);
+        transition: width 0.3s ease-out;
+    }
+
+    .category-item:hover::after {
+        width: 100%;
+    }
+
+    .category-item-selected .category-link {
+        color: rgb(10, 165, 240);
+    }
+
+    .category-link {
+        font-family: 'Muller';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.35;
+        text-align: center;
+        color: rgb(121, 121, 121);
+    }
+
+    .category-item:hover .category-link {
+        color: rgb(10, 165, 240);
+        transition: color 0.3s ease-out;
+    }
+
+    .category-link span {
+        position: relative;
+        top: -10px;
+        font-size: 10px;
+    }
+
+    .horizontal-line {
+        display: block;
+        max-width: 920px;
+        margin-top: -1.5px;
+        height: 1.5px;
+        background-color: #e5e5e5;
+        margin-bottom: 15px;
+    }
+
+    .main-like-category-show-selection {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 59px;
+    }
+
+    .main-like-category-show-selection span {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.35;
+        text-align: center;
+        color: var(--0);
+        font-family: 'Muller';
+        margin-right: 5px;
+    }
+
+    .show-selection-list {
+        display: flex;
+        gap: 4px;
+    }
+
+    .show-selection-item {
+        padding: 10px 5px;
+    }
+
+    .show-selection-item:hover .show-selection-link {
+        color: rgb(10, 165, 240);
+        transition: color 0.3s ease-out;
+    }
+
+    .show-selection-link {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.35;
+        text-align: center;
+        color: var(--0);
+        font-family: 'Muller';
+        margin-right: 5px;
+        background: none;
+        color: rgb(121, 121, 121);
+    }
+
+    .selected {
+        color: rgb(10, 165, 240);
+    }
+
+    /* table */
+
+    .tables {
+        display: block;
+        width: 100%;
+        height: 800px;
+        overflow-x: auto;
+    }
+
+    .tables-box {
+        width: 100%;
+        /*overflow-x: scroll;*/
+    }
+
+    .tables-box-body {
+        width: 100%;
+    }
+
+    .tables-box-row {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tables-box-row:first-child {
+        background-color: #b4d6e6;
+        border-radius: 10px;
+    }
+
+    .header-row {
+        border-radius: 10px 10px 0 0;
+        padding: 28px 28px 28px 28px;
+        color: rgb(10, 165, 240);
+        font-family: 'Muller';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.35;
+        text-align: left;
+        border-bottom: 1.5px solid rgb(10, 165, 240);
+        border-width: 100%;
+    }
+
+    .body-row {
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+        padding: 28px 28px 28px 0;
+        font-family: 'Muller';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.35;
+        color: rgb(121, 121, 121);
+    }
+
+    .body-row-tablet {
+        width: 100%;
+        display: flex;
+    }
+
+    .body-row-tablet-yacheika {
+       /*width: 361px;*/
+        width: 100%;
+        width: 361px;
+        text-align: left;
+        margin-right: 25px;
+        padding-left: 28px;
+    }
+
+    .main-sell-cart.main-sell-cart-celected {
+        border: 1.5px solid rgb(10, 165, 240);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .main-like-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
