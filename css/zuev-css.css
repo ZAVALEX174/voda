@@ -238,6 +238,7 @@
 
     .main-sell-cart {
         width: 100%;
+        height: auto !important;
         max-width: 256px;
         padding: 12px 10px 12px 14px;
         border: 1.5px solid transparent;
@@ -319,7 +320,7 @@
 .main-sell-cart-info {
     position: absolute;
     right: -10px;
-    top: 225px;
+    top: 185px;
 }
 
 .main-sell-cart-comparison-link {
@@ -364,12 +365,44 @@
 .main-sell-volume span {
     display: inline-block;
     white-space: nowrap;
+    padding-right: 0;
 }
 
 .main-sell-slide-list .volume-list {
     gap: 5px;
 }
 
-.main-sell-slide-list .volume-item {
+.main-sell-volume.volume-extra {
+    gap: 0;
+}
 
+.main-sell-price {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+}
+
+.main-sell-oldprice, .main-sell-newprice, .main-sell-zasht {
+    white-space: nowrap;
+}
+
+.main-sell-oldprice {
+    display: block;
+    text-align: left;
+}
+
+.main-sell-newprice {
+    display: inline-block;
+}
+
+.main-sell-zasht {
+    display: inline-block;
+    vertical-align: text-top;
+    line-height: 15px;
+}
+
+.main-sell-plus {
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
 }
