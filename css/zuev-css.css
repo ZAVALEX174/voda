@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .main-like-section-category {
     margin-bottom: 20px;
 
@@ -214,14 +221,21 @@
     }
 
     .main-sell-cart {
+        border: 1.5px solid transparent;
         margin-bottom: 75px;
+        position: relative;
+        -webkit-transition: border 0.3s ease-out;
+        -o-transition: border 0.3s ease-out;
+        transition: border 0.3s ease-out;
     }
 
     .main-sell-cart:hover{
-        position: relative;
         border: 1.5px solid rgb(10, 165, 240);
         border-radius: 10px;
         /*overflow: hidden;*/
+        -webkit-transition: border 0.3s ease-out;
+        -o-transition: border 0.3s ease-out;
+        transition: border 0.3s ease-out;
     }
 
     .main-sell-cart:hover::before{
@@ -270,4 +284,51 @@
         -webkit-box-shadow: 0 0 26px 0 rgba(9, 164, 237, 0.8);
         box-shadow: 0 0 26px 0 rgba(9, 164, 237, 0.8);
     }
+}
+
+.main-sell-cart-icon {
+    position: absolute;
+    top: 20px;
+    right: 18px;
+}
+
+.main-sell-cart-icon-like {
+}
+
+.main-sell-cart-icon-like-link {
+    width: 32px;
+    height: 32px;
+}
+
+.main-sell-cart-info {
+    position: absolute;
+    right: -10px;
+    top: 225px;
+}
+
+.main-sell-cart-comparison-link {
+    -webkit-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
+}
+
+.main-sell-cart-comparison .main-sell-cart-comparison-link:hover svg g rect {
+    fill: #084067;
+    -webkit-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
+}
+
+.main-sell-cart-comparison .main-sell-cart-comparison-link:hover svg g rect:nth-of-type(2) {
+    fill: #0AA5F0;
+    -webkit-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
+}
+
+.main-sell-cart-comparison .main-sell-cart-icon-like-link:hover svg g rect:nth-of-type(2) {
+    fill: #0AA5F0;
+    -webkit-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
 }
