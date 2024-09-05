@@ -173,6 +173,17 @@
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-transition: 0.3s ease-out;
+        -o-transition: 0.3s ease-out;
+        transition: 0.3s ease-out;
+    }
+
+    .tables-box-row:hover {
+        background-color: #b4d6e6;
+        border-radius: 10px;
+        -webkit-transition: 0.3s ease-out;
+        -o-transition: 0.3s ease-out;
+        transition: 0.3s ease-out;
     }
 
     .tables-box-row:first-child {
