@@ -12,6 +12,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .main-like-section-category {
     margin-bottom: 20px;
 
@@ -215,11 +222,17 @@
 
     .main-like-section-category-cart-box {
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
     .main-sell-slide-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-column-gap: 23px;
+        -moz-column-gap: 23px;
         column-gap: 23px;
     }
 
