@@ -19,6 +19,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .wrapper-category {
     min-height: 100%;
     width: 100%;
@@ -122,7 +129,7 @@
         font-size: 20px;
         line-height: 1.35;
         text-align: center;
-        color: var(--0);
+        color: #232323;
         font-family: 'Muller';
         margin-right: 5px;
     }
@@ -150,7 +157,7 @@
         font-size: 20px;
         line-height: 1.35;
         text-align: center;
-        color: var(--0);
+        color: #232323;
         font-family: 'Muller';
         margin-right: 5px;
         background: none;
@@ -237,6 +244,8 @@
         display: -ms-flexbox;
         display: flex;
         gap: 23px;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
     }
 
@@ -253,6 +262,7 @@
         display: flex;
         position: sticky;
         top: 0;
+        -webkit-box-shadow: 0 0 26px 0 rgba(9, 164, 237, 0.8);
         box-shadow: 0 0 26px 0 rgba(9, 164, 237, 0.8);
         background: #FFFFFF;
         border-radius: 10px 10px 15px 15px;
@@ -318,8 +328,8 @@
         pointer-events: none;
         left: 0;
         width: 265px;
-        /*min-height: 1250px;*/
-        height: auto;
+        min-height: 2050px;
+        /*height: auto;*/
         background-color: rgba(10, 165, 240, 0.1);
         border-radius: 10px;
         z-index: 50;
@@ -364,7 +374,14 @@
         top: 145px;
     }
 
-    .main-sell-cart-comparison-link {
+    .main-sell-cart-comparison-link, .main-sell-cart-icon-like {
+        -webkit-transition: 0.3s ease-out;
+        -o-transition: 0.3s ease-out;
+        transition: 0.3s ease-out;
+    }
+
+    .main-sell-cart-icon-like .main-sell-cart-icon-like-link:hover svg path:not(:nth-of-type(3)) {
+        fill: #084067;
         -webkit-transition: 0.3s ease-out;
         -o-transition: 0.3s ease-out;
         transition: 0.3s ease-out;
@@ -431,13 +448,19 @@
         border-radius: 8px;
         background-color: #E5E5E5;
         border: 1.50px solid #E5E5E5;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         font-size: 18px;
         font-weight: 400;
         line-height: 25px;
-        letter-spacing: 0%;
+        letter-spacing: 0;
         text-align: center;
         width: 46px;
         height: 33px;
