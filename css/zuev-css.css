@@ -32,6 +32,10 @@
 .main-like-section-category {
     margin-bottom: 20px;
 
+    .container-category {
+        max-width: 1160px;
+    }
+
     .main-like-category {
         width: 100%;
     }
