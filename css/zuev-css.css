@@ -182,6 +182,7 @@
 
     .tables-box {
         width: 100%;
+        border-radius: 0 0 10px 10px;
     }
 
     .tables-box-body {
@@ -247,7 +248,7 @@
         font-size: 20px;
         line-height: 1.35;
         text-align: left;
-        width: 256px;
+        width: 265px;
         text-align: left;
         padding: 28px 0 28px 28px;
     }
@@ -275,7 +276,7 @@
     }
 
     .body-row-tablet-yacheika {
-        width: 256px;
+        width: 265px;
         text-align: left;
         padding: 28px 0 28px 28px;
     }
@@ -530,5 +531,5 @@
 }
 
 .body-row-tablet-yacheika-sel {
-    background-color: #b4d6e6;
+    background-color: rgba(10, 165, 240, 0.1);
 }
