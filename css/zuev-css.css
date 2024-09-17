@@ -40,7 +40,7 @@
     margin-bottom: 20px;
 
     .container-category {
-        max-width: 1160px;
+        max-width: 1200px;
     }
 
     .main-like-category {
@@ -172,6 +172,7 @@
 
     .tables {
         display: block;
+        padding: 0 20px;
         width: 100%;
         /*height: 1006px;*/
         /*min-height: 1006px;*/
@@ -209,10 +210,10 @@
         transition: 0.3s ease-out;
     }
 
-    .tables-box-row:first-child {
-        background-color: #b4d6e6;
-        border-radius: 10px;
-    }
+    /*.tables-box-row:first-child {*/
+    /*    background-color: #b4d6e6;*/
+    /*    border-radius: 10px;*/
+    /*}*/
 
     .header-row {
         border-radius: 10px 10px 0 0;
@@ -256,6 +257,7 @@
     }
 
     .main-like-section-category-cart-box {
+        padding: 0 20px;
         width: 100%;
         display: -webkit-box;
         display: -ms-flexbox;
