@@ -217,21 +217,45 @@
 
     .header-row {
         border-radius: 10px 10px 0 0;
-        padding: 28px 28px 28px 28px;
+        border-bottom: 1.5px solid rgb(10, 165, 240);
+        border-width: 100%;
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 23px;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    .header-row-table {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 23px;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    .header-row-table-yacheika {
         color: rgb(10, 165, 240);
         font-family: 'Muller';
         font-weight: 400;
         font-size: 20px;
         line-height: 1.35;
         text-align: left;
-        border-bottom: 1.5px solid rgb(10, 165, 240);
-        border-width: 100%;
+        width: 256px;
+        text-align: left;
+        padding: 28px 0 28px 28px;
     }
 
     .body-row {
         width: 100%;
         border-radius: 0 0 10px 10px;
-        padding: 28px 0 28px 0;
+        padding: 0;
         font-family: 'Muller';
         font-weight: 400;
         font-size: 20px;
@@ -253,7 +277,7 @@
     .body-row-tablet-yacheika {
         width: 256px;
         text-align: left;
-        padding-left: 28px;
+        padding: 28px 0 28px 28px;
     }
 
     .main-like-section-category-cart-box {
@@ -431,12 +455,12 @@
         gap: 5px;
     }
 
-    .main-sell-volume-slide .volume-list .volume-item.volume-item-selected .volume-link{
+    .main-sell-volume-slide .volume-list .volume-item.volume-item-selected .volume-link {
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
     }
 
-    .main-sell-volume-slide .volume-list .volume-item.volume-item-selected .volume-link{
+    .main-sell-volume-slide .volume-list .volume-item.volume-item-selected .volume-link {
         background-color: rgb(10, 165, 240);
         color: #fff;
     }
@@ -503,4 +527,8 @@
         right: 10px;
         bottom: 20px;
     }
+}
+
+.body-row-tablet-yacheika-sel {
+    background-color: #b4d6e6;
 }
