@@ -282,10 +282,9 @@
     }
 
     .main-sell-cart.main-sell-cart-celected {
-        position: relative;
-        border: 1.5px solid rgb(10, 165, 240);
-        border-radius: 10px;
-        /*overflow: hidden;*/
+        /*position: relative;*/
+        /*border: 1.5px solid rgb(10, 165, 240);*/
+        /*border-radius: 10px;*/
     }
 
     .main-sell-cart {
