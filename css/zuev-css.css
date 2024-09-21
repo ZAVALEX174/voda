@@ -247,6 +247,7 @@
     }
 
     .header-row-table-yacheika {
+        /*position: relative;*/
         color: rgb(10, 165, 240);
         font-family: 'Muller';
         font-weight: 400;
@@ -553,3 +554,16 @@
 .body-row-tablet-yacheika-sel {
     background-color: rgba(10, 165, 240, 0.1);
 }
+.body-row:last-child .body-row-tablet .body-row-tablet-yacheika {
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+}
+/*.tables-box-row:first-child .header-row-table-yacheika[data-js-table-yach1]::before {*/
+/*    position: absolute;*/
+/*    content: '';*/
+/*    display: block;*/
+/*    width: 265px;*/
+/*    height: 109px;*/
+/*    top: -40px;*/
+/*    background-color: rgba(10, 165, 240, 0.1);*/
+/*}*/
