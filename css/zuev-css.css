@@ -554,7 +554,7 @@
 .body-row-tablet-yacheika-sel {
     background-color: rgba(10, 165, 240, 0.1);
 }
-.body-row:last-child .body-row-tablet .body-row-tablet-yacheika {
+.tables-box-row:last-child .body-row:last-child .body-row-tablet .body-row-tablet-yacheika {
     border-radius: 0 0 10px 10px;
     overflow: hidden;
 }
